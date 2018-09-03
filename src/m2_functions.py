@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Kaia Johnson.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -30,7 +30,7 @@ def main():
 
 ###############################################################################
 #
-# TODO: 3a.  Define a function immediately blow this _TODO_.
+# DONE: 3a.  Define a function immediately blow this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -38,10 +38,30 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+import math
+
+
+def main():
+    a=3
+    b=4
+    print(foo(a,b))
+
+def foo(a,b):
+    return math.sqrt((a**2) + (b**2))
+
+
+
+
+
+
+
+
+
+
 
 
 ###############################################################################
@@ -66,6 +86,8 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+SimpleTurtle()
+
 
 
 ###############################################################################
