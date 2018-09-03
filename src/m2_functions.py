@@ -25,7 +25,8 @@ import math
 def main():
     window = rg.TurtleWindow()
     window.delay(20)
-    food('Green', 5)
+    food('Blue', 40)
+    food('Pink',10)
     a = 3
     b = 4
     print(foo(a, b))
@@ -34,11 +35,11 @@ def main():
 
 def food(color, thickness):
     kenny = rg.SimpleTurtle('turtle')
-    kenny.Pen = rg.Pen('Green', thickness)
+    kenny.pen = rg.Pen('Green', thickness)
     kenny.forward(100)
     kyle = rg.SimpleTurtle('turtle')
-    kyle.Pen = rg.Pen(color, 5)
-    kyle.forward(100)
+    kyle.pen = rg.Pen(color, 5)
+    kyle.backward(100)
 
 
 ###############################################################################
@@ -62,7 +63,7 @@ def foo(a, b):
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -78,7 +79,7 @@ def foo(a, b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function and print the returned value,
+# DONE: 4b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -86,7 +87,7 @@ def foo(a, b):
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
