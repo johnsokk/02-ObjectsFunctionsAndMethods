@@ -86,7 +86,24 @@ def foo(a,b):
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-SimpleTurtle()
+import rosegraphics as rg
+
+def main():
+    window = rg.SimpleTurtle()
+    tweek = rg.SimpleTurtle()
+    tweek.Pen = 'Green'
+    craig = rg.SimpleTurtle()
+    craig.Pen = 5
+    tweek.forward(100)
+    craig.backward(100)
+
+def
+
+
+
+
+
+
 
 
 
