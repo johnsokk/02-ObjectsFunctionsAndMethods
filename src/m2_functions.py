@@ -19,13 +19,26 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
+import math
 
 
 def main():
-    """
-    TESTS the functions that you will write below.
-    You write the tests per the _TODO_s below.
-    """
+    window = rg.TurtleWindow()
+    window.delay(20)
+    food('Green', 5)
+    a = 3
+    b = 4
+    print(foo(a, b))
+    window.close_on_mouse_click()
+
+
+def food(color, thickness):
+    kenny = rg.SimpleTurtle('turtle')
+    kenny.Pen = rg.Pen('Green', thickness)
+    kenny.forward(100)
+    kyle = rg.SimpleTurtle('turtle')
+    kyle.Pen = rg.Pen(color, 5)
+    kyle.forward(100)
 
 
 ###############################################################################
@@ -42,26 +55,9 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-import math
 
-
-def main():
-    a=3
-    b=4
-    print(foo(a,b))
-
-def foo(a,b):
+def foo(a, b):
     return math.sqrt((a**2) + (b**2))
-
-
-
-
-
-
-
-
-
-
 
 
 ###############################################################################
@@ -86,25 +82,6 @@ def foo(a,b):
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-import rosegraphics as rg
-
-def main():
-    window = rg.SimpleTurtle()
-    tweek = rg.SimpleTurtle()
-    tweek.Pen = 'Green'
-    craig = rg.SimpleTurtle()
-    craig.Pen = 5
-    tweek.forward(100)
-    craig.backward(100)
-
-def
-
-
-
-
-
-
-
 
 
 ###############################################################################
@@ -132,4 +109,7 @@ def
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
+
+
 main()
+
