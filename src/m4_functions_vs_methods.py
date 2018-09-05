@@ -99,7 +99,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -143,7 +143,7 @@ def try_methods():
     levi.backward(100)
 
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
@@ -156,10 +156,11 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
-    while levi.forward(300,30)
-
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
