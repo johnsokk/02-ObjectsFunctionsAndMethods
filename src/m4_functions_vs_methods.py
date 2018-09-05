@@ -194,8 +194,30 @@ def try_methods_and_functions():
       7. Draw a CIRCLE whose radius is 30.
       8. Draw a SQUARE whose sides are each of length 50.
     """
+
+    eren = rg.SimpleTurtle()
+    eren.pen = rg.Pen('Blue', 5)
+    eren.backward(150)
+    eren.speed = 1
+    draw_many_squares(eren, 2, 100, 30)
+    eren.speed = 5
+    eren.pen = rg.Pen('Red', 5)
+    draw_many_squares(eren, 10, 50, 15)
+    eren.speed = 100
+    eren.pen = rg.Pen('Red', 35)
+    draw_many_squares(eren, 8, 300, 60)
+    eren.pen = rg.Pen('Black', 3)
+    eren.backward(200)
+    eren.draw_circle(30)
+    draw_many_squares(eren, 1, 50, 0)
+
+
+
+
+
+
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
